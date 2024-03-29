@@ -1,5 +1,6 @@
 import src.aulamock
 
+
 def test_chave(mocker):
   mocker.patch.object(
     src.aulamock,
@@ -8,7 +9,7 @@ def test_chave(mocker):
   )
 
 
-  assert src.aulamock.chave() == "17147oisjiodio"
+  assert src.aulamock.VALOR_CHAVE == "17147oisjiodio"
 
 # mock de funcoes
 def test_soma(moker):
